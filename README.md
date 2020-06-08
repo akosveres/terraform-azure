@@ -1,5 +1,7 @@
 # Terraform-Azure
 
+![Docker Build](https://img.shields.io/docker/cloud/build/puckd/terraform-azure)
+
 Docker container which has the latest terraform version and azure cli installed. This is for Linux AMD64.
 
 ## Usage
@@ -7,7 +9,7 @@ Docker container which has the latest terraform version and azure cli installed.
 Set an alias to run the Azure CLI commands inside the docker container, ex:
 
 ```
-alias az="docker run -u $(id -u):$(id -g) -v ${HOME}/.azure:/home/az/.azure -e HOME=/home/az --rm -it puckd/tf-az:0.8 az"
+alias az="docker run -u $(id -u):$(id -g) -v ${HOME}/.azure:/home/az/.azure -e HOME=/home/az --rm -it puckd/terraform-azure:0.1 az"
 az login
 ```
 
